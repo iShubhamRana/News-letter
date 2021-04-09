@@ -63,7 +63,7 @@ app.post( '/failure' , (req,res)=>{
     res.redirect('/');
 } )
 
-app.listen( 3000 , ()=>{ console.log('server started at port 3000')});
+app.listen( process.env.PORT || 3000 , ()=>{ console.log('server started at port 3000')});
 
 
 // 49732fc9c2407c68c3de5d7baf20762e-us1
